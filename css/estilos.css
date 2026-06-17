@@ -183,3 +183,72 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+/* Diseño para tablets y celulares */
+@media screen and (max-width: 768px) {
+
+    /* El encabezado se acomoda en columna */
+    .encabezado {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    /* El menú baja y se centra */
+    .menu a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    /* El logo se acomoda mejor */
+    .logo {
+        flex-direction: column;
+    }
+
+    /* Bajamos el tamaño del título */
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    /* La portada ocupa menos alto en celular */
+    .portada {
+        height: 75vh;
+    }
+
+    /* Centramos el texto de la portada */
+    .capa {
+        text-align: center;
+        align-items: center;
+        padding: 25px;
+    }
+
+    /* Título principal más pequeño */
+    .capa h2 {
+        font-size: 36px;
+    }
+
+    /* Texto de portada más pequeño */
+    .capa p {
+        font-size: 18px;
+    }
+
+    /* Las tarjetas se ponen una debajo de otra */
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    /* Cada tarjeta ocupa todo el ancho */
+    .tarjeta {
+        width: 100%;
+    }
+
+    /* Botones de contacto separados */
+    .contacto .boton {
+        margin: 8px;
+    }
+
+    /* El texto de nosotros se ajusta */
+    .nosotros p {
+        font-size: 18px;
+    }
+}
