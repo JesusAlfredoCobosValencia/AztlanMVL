@@ -1,0 +1,185 @@
+/* Quitamos márgenes por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    color: #e60000;
+    font-size: 24px;
+}
+
+/* Menú */
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+/* Portada */
+.portada {
+    height: 90vh;
+    background-image: url("../img/portada.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Capa oscura sobre la imagen */
+.capa {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.62);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+/* Título de portada */
+.capa h2 {
+    font-size: 55px;
+    color: #ffcc00;
+    max-width: 750px;
+}
+
+/* Texto de portada */
+.capa p {
+    font-size: 22px;
+    margin: 20px 0;
+    max-width: 650px;
+}
+
+/* Botones */
+.boton {
+    background-color: #e60000;
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    width: fit-content;
+}
+
+.boton:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+/* Secciones generales */
+.seccion {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.seccion h2,
+.nosotros h2,
+.contacto h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+/* Contenedor de tarjetas */
+.tarjetas {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Tarjeta individual */
+.tarjeta {
+    background-color: white;
+    padding: 35px;
+    width: 32%;
+    border-bottom: 6px solid #e60000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.tarjeta h3 {
+    color: #e60000;
+    margin-bottom: 15px;
+}
+
+/* Sección nosotros */
+.nosotros {
+    background-color: #111;
+    color: white;
+    padding: 70px 8%;
+}
+
+.nosotros h2 {
+    color: #ffcc00;
+}
+
+.nosotros p {
+    font-size: 20px;
+    max-width: 850px;
+}
+
+/* Contacto */
+.contacto {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #ffcc00;
+}
+
+.contacto p {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.secundario {
+    background-color: #000;
+    margin-left: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
