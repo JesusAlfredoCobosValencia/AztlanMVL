@@ -693,3 +693,193 @@ footer {
 .contenedor-andamios {
     align-items: start;
 }
+
+/* =============================== */
+/* CORRECCIÓN FUERTE PARA CELULAR */
+/* =============================== */
+
+@media screen and (max-width: 900px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .encabezado {
+        position: relative;
+        flex-direction: column;
+        min-height: auto;
+        padding-bottom: 15px;
+    }
+
+    .caja-logo {
+        width: 100%;
+        min-height: 110px;
+    }
+
+    .caja-logo img {
+        width: 150px;
+    }
+
+    .zona-menu {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu-superior {
+        display: none;
+    }
+
+    .menu-principal {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .menu a {
+        font-size: 15px;
+        padding: 8px 10px;
+        text-align: center;
+    }
+
+    .redes-header {
+        position: static;
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .redes-header a {
+        font-size: 12px;
+        padding: 9px 12px;
+    }
+
+    .portada {
+        height: auto;
+        min-height: 640px;
+    }
+
+    .imagen-portada {
+        width: 100%;
+        height: 45%;
+        top: auto;
+        bottom: 0;
+        clip-path: none;
+        opacity: 0.55;
+        background-position: center;
+    }
+
+    .contenido-portada {
+        width: 100%;
+        min-height: 420px;
+        padding: 45px 25px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .etiqueta {
+        font-size: 12px;
+        letter-spacing: 2px;
+        padding: 8px 12px;
+    }
+
+    .contenido-portada h2 {
+        font-size: 34px;
+        line-height: 1.15;
+        text-shadow: 3px 3px 0 #111;
+    }
+
+    .texto-portada {
+        font-size: 17px;
+        max-width: 100%;
+    }
+
+    .botones-portada {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton {
+        font-size: 14px;
+        padding: 13px 20px;
+    }
+
+    .tipos-andamios {
+        padding: 60px 6%;
+    }
+
+    .titulo-seccion p {
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 34px;
+    }
+
+    .contenedor-andamios {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        align-items: start;
+    }
+
+    .caja-andamio {
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .caja-andamio img {
+        height: 300px;
+        padding: 24px;
+    }
+
+    .info-andamio {
+        margin: -15px 18px 20px 18px;
+        padding: 22px;
+    }
+
+    .info-andamio h3 {
+        font-size: 24px;
+    }
+
+    .info-andamio p {
+        font-size: 15px;
+    }
+
+    .info-extra {
+        margin: 0 18px 20px 18px;
+        font-size: 14px;
+    }
+
+    .nosotros {
+        padding: 60px 8%;
+        text-align: center;
+    }
+
+    .nosotros h2 {
+        font-size: 30px;
+    }
+
+    .nosotros p {
+        font-size: 17px;
+    }
+
+    .contacto {
+        padding: 60px 8%;
+    }
+
+    .contacto .boton {
+        display: block;
+        margin: 10px auto;
+    }
+}
