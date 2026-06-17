@@ -883,3 +883,128 @@ footer {
         margin: 10px auto;
     }
 }
+
+/* =============================== */
+/* AJUSTE FINAL PARA CELULAR */
+/* =============================== */
+
+@media screen and (max-width: 768px) {
+
+    /* Evita que se haga más ancho de lo normal */
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Header más compacto */
+    .encabezado {
+        position: relative;
+        min-height: auto;
+        padding: 8px 0 12px 0;
+    }
+
+    /* Logo más chico en teléfono */
+    .caja-logo {
+        width: 100%;
+        min-height: 95px;
+    }
+
+    .caja-logo img {
+        width: 135px;
+        max-width: 45%;
+    }
+
+    /* Ocultamos menú superior en teléfono */
+    .menu-superior {
+        display: none;
+    }
+
+    /* Zona del menú */
+    .zona-menu {
+        padding: 0 12px 10px 12px;
+    }
+
+    /* Menú principal centrado */
+    .menu-principal {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Menú en botones pequeños */
+    .menu {
+        width: 100%;
+        max-width: 370px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        margin: 0 auto;
+    }
+
+    /* Enlaces del menú más chicos */
+    .menu a {
+        background-color: #f2f2f2;
+        color: #111;
+        font-size: 13px;
+        padding: 10px 6px;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 1.1;
+    }
+
+    .menu a:hover {
+        background-color: #e60000;
+        color: white;
+    }
+
+    /* Redes más compactas */
+    .redes-header {
+        position: static;
+        margin-top: 12px;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .redes-header a {
+        font-size: 12px;
+        padding: 9px 12px;
+        border-radius: 22px;
+    }
+
+    /* Portada más controlada */
+    .portada {
+        min-height: 560px;
+    }
+
+    .contenido-portada {
+        min-height: 360px;
+        padding: 35px 18px;
+    }
+
+    .etiqueta {
+        font-size: 11px;
+        letter-spacing: 2px;
+        padding: 8px 12px;
+    }
+
+    .contenido-portada h2 {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    .texto-portada {
+        font-size: 15px;
+    }
+
+    .boton {
+        font-size: 13px;
+        padding: 11px 16px;
+    }
+
+    /* Imagen de portada abajo */
+    .imagen-portada {
+        height: 42%;
+        opacity: 0.55;
+        background-position: center;
+    }
+}
